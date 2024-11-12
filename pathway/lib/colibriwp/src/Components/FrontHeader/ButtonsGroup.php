@@ -18,6 +18,22 @@ class ButtonsGroup extends ComponentBase {
 	protected static function getOptions() {
 		$prefix = static::$settings_prefix;
 
+        $theme_action_button           = __( 'Get started now', 'pathway' );
+        $theme_action_button_secondary = __( 'Learn more', 'pathway' );
+        $default_value = array(
+            array(
+                'label'       => sprintf( $theme_action_button, 1 ),
+                'url'         => '#',
+                'button_type' => '0',
+                'index'       => 0,
+            ),
+            array(
+                'label'       => sprintf( $theme_action_button_secondary, 1 ),
+                'url'         => '#',
+                'button_type' => '1',
+                'index'       => 1,
+            ),
+        );
 		return array(
 			'sections' => array(
 				"{$prefix}section" => array(
@@ -42,7 +58,7 @@ class ButtonsGroup extends ComponentBase {
 
 				),
 				"{$prefix}value"           => array(
-					'default' => Defaults::get( "{$prefix}value" ),
+					'default' =>$default_value,
 					'control' => array(
 						'label'          => Translations::get( 'buttons' ),
 						'type'           => 'repeater',

@@ -126,14 +126,16 @@ pathway_theme()
 			'width'       => 150,
 			'height'      => 70,
 		)
-	)
-	->register_menus(
-		array(
-			'header-menu' => esc_html__( 'Header Menu', 'pathway' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'pathway' ),
-		)
 	);
 
+add_action('after_setup_theme', function() {
+    pathway_theme()->register_menus(
+        array(
+            'header-menu' => esc_html__( 'Header Menu', 'pathway' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'pathway' ),
+        )
+    );
+},1);
 if ( ! apply_filters( 'kubio_is_enabled', false ) ) {
 	pathway_assets()
 		->registerTemplateScript(

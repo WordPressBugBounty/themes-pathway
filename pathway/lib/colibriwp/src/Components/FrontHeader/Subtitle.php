@@ -43,7 +43,7 @@ class Subtitle extends ComponentBase {
 
 				),
 				"{$prefix}localProps.content" => array(
-					'default' => Defaults::get( 'lorem_ipsum' ),
+					'default' => __('Start building your website today!', 'pathway'),
 					'control' => array(
 						'label'       => Translations::get( 'subtitle' ),
 						'type'        => 'input',

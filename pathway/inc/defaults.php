@@ -188,10 +188,10 @@ $pathway_gradients = array(
 		),
 
 );
-$pathway_theme_action_button           = __( 'Get started now', 'pathway' );
-$pathway_theme_action_button_secondary = __( 'Learn more', 'pathway' );
+$pathway_theme_action_button           = 'Get started now';
+$pathway_theme_action_button_secondary = 'Learn more';
 
-$pathway_theme_click_pen_to_edit_title = __( 'We are visual storytellers', 'pathway' );
+$pathway_theme_click_pen_to_edit_title = 'We are visual storytellers';
 $pathway_lorem_ipsum                   = 'Start building your website today!';
 
 
