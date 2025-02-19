@@ -102,6 +102,7 @@ class EnableKubioInCustomizerPanel extends \WP_Customize_Panel {
 				cursor: default;
 				border: 1px solid #ddd !important;
 				box-shadow: none !important;
+				 padding: 12px 15px 15px;
 			}
 
 			.kubio-customizer-panel .accordion-section-title:after {

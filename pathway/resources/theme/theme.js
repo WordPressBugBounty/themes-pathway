@@ -2184,7 +2184,7 @@ window.Colibri = _kubio_scripts_src_base__WEBPACK_IMPORTED_MODULE_0__.ColibriFro
       out: 'slideOutDownNavigation'
     },
     fade: {
-      "in": 'fadeIn',
+      "in": 'fadeIn fade-animation-without-other-transitions',
       out: 'fadeOut'
     },
     none: {
@@ -2238,7 +2238,7 @@ window.Colibri = _kubio_scripts_src_base__WEBPACK_IMPORTED_MODULE_0__.ColibriFro
       var duration = animation.duration;
       return $.extend(true, {}, this.opts.sticky, {
         animations: {
-          allInAnimationsClasses: 'slideInDown fadeIn h-global-transition-disable',
+          allInAnimationsClasses: 'slideInDown fadeIn fade-animation-without-other-transitions h-global-transition-disable',
           allOutAnimationsClasses: 'slideOutDownNavigation fadeOut h-global-transition-disable',
           currentInAnimationClass: animations[animation.name]["in"],
           currentOutAnimationClass: animations[animation.name].out,

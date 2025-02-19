@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! 
  Theme Name:   Pathway
- Version:      1.0.32
+ Version:      1.0.33
  Description:  Pathway is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Pathway is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
  Author:       Extend Themes
  Author URI:   https://kubiobuilder.com
@@ -1803,11 +1803,14 @@ html.pathway-theme .wp-block-kubio-navigation [data-kubio]:not([class*=h-col-]){
 html.pathway-theme .wp-block-kubio-navigation.h-navigation_overlap{left:0;position:absolute!important;right:0;z-index:10001}
 html.pathway-theme .wp-block-kubio-navigation [data-nav-normal]{transition:all .5s}
 html.pathway-theme .wp-block-kubio-navigation .h-hide-normal{display:none}
+html.pathway-theme .wp-block-kubio-navigation .h-navigation_sticky .wp-block-kubio-row__inner{display:grid;grid-template-columns:auto auto;justify-content:space-between!important}
+html.pathway-theme .wp-block-kubio-navigation .h-navigation_sticky .wp-block-kubio-row__inner:has(>:nth-child(3)){display:flex}
 html.pathway-theme .wp-block-kubio-navigation .h-navigation_sticky .h-hide-normal{display:flex}
 html.pathway-theme .wp-block-kubio-navigation .h-navigation_sticky .h-hide-sticky{display:none}
 html.pathway-theme .wp-block-kubio-navigation__outer{position:relative}
 html.pathway-theme .wp-block-kubio-navigation_container-in-sticky{z-index:9999}@-webkit-keyframes slideOutDownNavigation{0%{transform:translateZ(0)}to{transform:translate3d(0,-100%,0);visibility:hidden}}@keyframes slideOutDownNavigation{0%{transform:translateZ(0)}to{transform:translate3d(0,-100%,0);visibility:hidden}}
 html.pathway-theme .slideOutDownNavigation{-webkit-animation-name:slideOutDownNavigation;animation-name:slideOutDownNavigation}
+html.pathway-theme .fade-animation-without-other-transitions{transition-property:opacity!important}
 html.pathway-theme .wp-block-kubio-page-title{word-break:break-word}
 html.pathway-theme .wp-block-kubio-page-title .components-select-control__input{line-height:unset!important}
 html.pathway-theme .wp-block-kubio-page-title .kubio-alternate-logo-image{display:none}
