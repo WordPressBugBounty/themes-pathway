@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! 
  Theme Name:   Pathway
- Version:      1.0.33
+ Version:      1.0.34
  Description:  Pathway is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Pathway is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
  Author:       Extend Themes
  Author URI:   https://kubiobuilder.com
@@ -10,7 +10,7 @@
  Tags:         entertainment, food-and-drink, portfolio, one-column, two-columns, grid-layout, custom-header, custom-menu, custom-logo, full-width-template, theme-options, translation-ready, featured-images, threaded-comments
  Text Domain:  pathway
 
- Tested up to: 6.7
+ Tested up to: 6.8
  Requires PHP: 7.1
  Requires at least: 5.8.3
 
@@ -1201,14 +1201,6 @@ html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__titl
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title.accordion-active~.h-accordion-item-content__container{display:block}
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title.accordion-active .h-accordion-item-title-active-icon{display:inline-block}
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title.accordion-active .h-accordion-item-title-normal-icon{display:none}
-html.pathway-theme .breadcrumb-items__wrapper{display:flex}
-html.pathway-theme .breadcrumb-items__wrapper .breadcrumb-items__prefix{align-items:center;display:inline-flex}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb{align-items:center;display:inline-flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li{align-items:center;display:inline-flex;margin:0;vertical-align:middle}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li+li:before{color:#ccc;content:"/ ";padding:0 5px}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li a{display:inline-flex;line-height:1em!important}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li svg{fill:currentColor;color:currentColor}
-html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li:last-child span{line-height:1em}
 html.pathway-theme .wp-block-kubio-buttongroup{display:block;width:100%}
 html.pathway-theme [data-kubio] .wp-block-kubio-buttongroup{display:inline-block}
 html.pathway-theme .wp-block-kubio-button__outer{display:inline-flex}
@@ -1991,136 +1983,6 @@ html.pathway-theme .wp-block-kubio-section .entry-content>*{max-width:unset}
 html.pathway-theme .h-shortcode-placeholder-preview{background-color:#f7f7f7;border:1px solid #dadada;color:#919191;padding:10px;text-align:center}
 html.pathway-theme .wp-block-kubio-social-icon{display:inline-block}
 html.pathway-theme .wp-block-kubio-social-icon .h-svg-icon svg{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--auto .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--auto .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--custom .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--custom .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto form{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom form{width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields{display:block}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below.kubio-newsletter-email--auto .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below.kubio-newsletter-email--custom .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start [type=submit]{margin-left:0!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center [type=submit]{margin-left:auto!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end [type=submit]{margin-left:auto!important;margin-right:0!important}@media (min-width:576px){
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--auto-sm .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--auto-sm .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--custom-sm .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--custom-sm .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-sm,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-sm form{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-sm,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-sm form{width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields{display:block}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm.kubio-newsletter-email--auto-sm .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm.kubio-newsletter-email--custom-sm .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-sm [type=submit]{margin-left:0!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-sm [type=submit]{margin-left:auto!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-sm [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:768px){
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--auto-md .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--auto-md .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--custom-md .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--custom-md .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-md,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-md form{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-md,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-md form{width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields{display:block}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md.kubio-newsletter-email--auto-md .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md.kubio-newsletter-email--custom-md .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-md [type=submit]{margin-left:0!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-md [type=submit]{margin-left:auto!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-md [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:1024px){
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--auto-lg .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--auto-lg .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--custom-lg .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--custom-lg .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-lg,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-lg form{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-lg,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-lg form{width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields{display:block}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg.kubio-newsletter-email--auto-lg .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg.kubio-newsletter-email--custom-lg .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-lg [type=submit]{margin-left:0!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-lg [type=submit]{margin-left:auto!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-lg [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:1200px){
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--auto-xl .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--auto-xl .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--custom-xl .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--custom-xl .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-xl,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-xl form{width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-xl,
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-xl form{width:auto}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields{display:block}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl.kubio-newsletter-email--auto-xl .kubio-newsletter__email-group input{min-width:100%!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl.kubio-newsletter-email--custom-xl .kubio-newsletter__email-group input{min-width:unset!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-xl [type=submit]{margin-left:0!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-xl [type=submit]{margin-left:auto!important;margin-right:auto!important}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-xl [type=submit]{margin-left:auto!important;margin-right:0!important}}
-html.pathway-theme .wp-block-kubio-subscribe-form .h-block-placeholder{font-style:normal;font-weight:400;letter-spacing:normal;text-decoration:none;text-transform:none}
-html.pathway-theme .wp-block-kubio-subscribe-form__container{overflow:visible}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form{display:inline-block;margin:0;max-width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form input{line-height:normal;max-width:100%;outline:none}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form input[type=checkbox],
-html.pathway-theme .wp-block-kubio-subscribe-form__container form input[type=radio]{bottom:0}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form [type=submit]{border-color:transparent}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form input:focus{box-shadow:none}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-form-fields>*{align-items:center;display:flex;justify-content:space-between}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-form-fields>p{margin:0}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__agree-terms-group{justify-content:flex-start}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__agree-terms-group input[type=checkbox]{height:16px;margin:0 5px 0 0;width:16px}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__email-group{display:flex;flex:1}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__email-group label{white-space:nowrap}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button{align-items:center;display:inline-flex}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button .kubio-newsletter__submit-text{order:2}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button svg{height:100%;width:100%}
-html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-alert p{margin-bottom:0}
-html.pathway-theme .wp-block-kubio-subscribe-form__container.submit_icon_position-after .kubio-newsletter__submit-group button[type=submit]{align-items:center;display:flex;flex-direction:row}
-html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter__agree-terms-group p{color:inherit!important;font-family:inherit!important;font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;letter-spacing:inherit!important;line-height:inherit!important;text-decoration:inherit!important;text-transform:inherit!important}
 html.pathway-theme .h-tabs--horizontal--auto.h-tabs-horizontal>.h-tabs-navigation>*{flex-basis:auto;flex-grow:0}
 html.pathway-theme .h-tabs--horizontal--stretch.h-tabs-horizontal>.h-tabs-navigation>*{flex-basis:auto;flex-grow:1}
 html.pathway-theme .h-tabs--horizontal--full.h-tabs-horizontal>.h-tabs-navigation>*{flex-basis:100%;flex-grow:0}
@@ -2608,6 +2470,144 @@ html.pathway-theme .swiper-container.swiper-container-coverflow{perspective:1200
 html.pathway-theme .swiper-container.swiper-container-coverflow .swiper-slide-shadow-left,
 html.pathway-theme .swiper-container.swiper-container-coverflow .swiper-slide-shadow-right{opacity:0!important}
 html.pathway-theme .ken-burns-effect .swiper-slide-active .wp-block-kubio-carousel-item__inner>.background-wrapper>.background-layer .forceBackgroundLayer{-webkit-animation:slider-ken-burns-effect 10s ease infinite alternate;animation:slider-ken-burns-effect 10s ease infinite alternate;background-attachment:scroll;background-position:50%;background-repeat:no-repeat;background-size:cover}
+html.pathway-theme .breadcrumb-items__wrapper{display:flex}
+html.pathway-theme .breadcrumb-items__wrapper .breadcrumb-items__prefix{align-items:center;display:inline-flex}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb{align-items:center;display:inline-flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li{align-items:center;display:inline-flex;margin:0;vertical-align:middle}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li+li:before{color:#ccc;content:"/ ";padding:0 5px}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li a{display:inline-flex;line-height:1em!important}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li svg{fill:currentColor;color:currentColor}
+html.pathway-theme .breadcrumb-items__wrapper .kubio-breadcrumb>li:last-child span{line-height:1em}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--auto .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--auto .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--custom .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline.kubio-newsletter-email--custom .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto form{width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom form{width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields{display:block}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below.kubio-newsletter-email--auto .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below.kubio-newsletter-email--custom .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start [type=submit]{margin-left:0!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center [type=submit]{margin-left:auto!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end [type=submit]{margin-left:auto!important;margin-right:0!important}@media (min-width:576px){
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--auto-sm .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--auto-sm .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--custom-sm .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-sm.kubio-newsletter-email--custom-sm .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-sm,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-sm form{width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-sm,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-sm form{width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields{display:block}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm.kubio-newsletter-email--auto-sm .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-sm.kubio-newsletter-email--custom-sm .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-sm [type=submit]{margin-left:0!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-sm [type=submit]{margin-left:auto!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-sm [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:768px){
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--auto-md .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--auto-md .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--custom-md .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-md.kubio-newsletter-email--custom-md .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-md,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-md form{width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-md,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-md form{width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields{display:block}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md.kubio-newsletter-email--auto-md .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-md.kubio-newsletter-email--custom-md .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-md [type=submit]{margin-left:0!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-md [type=submit]{margin-left:auto!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-md [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:1024px){
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--auto-lg .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--auto-lg .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--custom-lg .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-lg.kubio-newsletter-email--custom-lg .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-lg,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-lg form{width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-lg,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-lg form{width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields{display:block}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg.kubio-newsletter-email--auto-lg .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-lg.kubio-newsletter-email--custom-lg .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-lg [type=submit]{margin-left:0!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-lg [type=submit]{margin-left:auto!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-lg [type=submit]{margin-left:auto!important;margin-right:0!important}}@media (min-width:1200px){
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields{display:inline-flex;display:inline-grid;flex-wrap:wrap;grid-template-columns:auto auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]){width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__email-group{align-items:center;flex:1 1 auto;flex-direction:row;justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__agree-terms-group{flex:0 1 100%;grid-column:1/span 2;grid-row:2}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl .mc4wp-form-fields .kubio-newsletter__submit-group{flex:0 1 auto;grid-column:2/span 1;grid-row:1}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--auto-xl .mc4wp-form-fields{grid-template-columns:1fr auto;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--auto-xl .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--custom-xl .mc4wp-form-fields{grid-template-columns:auto auto;width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--inline-xl.kubio-newsletter-email--custom-xl .mc4wp-form-fields .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-xl,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--auto-xl form{width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-xl,
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter-email--custom-xl form{width:auto}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields{display:block}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__email-group{align-items:flex-start;flex-direction:column;justify-content:center}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__agree-terms-group,
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl .mc4wp-form-fields .kubio-newsletter__submit-group{grid-column:unset;grid-row:unset}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl.kubio-newsletter-email--auto-xl .kubio-newsletter__email-group input{min-width:100%!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .submit-button--below-xl.kubio-newsletter-email--custom-xl .kubio-newsletter__email-group input{min-width:unset!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-start-xl [type=submit]{margin-left:0!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--center-xl [type=submit]{margin-left:auto!important;margin-right:auto!important}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter--shortcode-layout.submit-button-align--flex-end-xl [type=submit]{margin-left:auto!important;margin-right:0!important}}
+html.pathway-theme .wp-block-kubio-subscribe-form .h-block-placeholder{font-style:normal;font-weight:400;letter-spacing:normal;text-decoration:none;text-transform:none}
+html.pathway-theme .wp-block-kubio-subscribe-form__container{overflow:visible}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form{display:inline-block;margin:0;max-width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form input{line-height:normal;max-width:100%;outline:none}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form input[type=checkbox],
+html.pathway-theme .wp-block-kubio-subscribe-form__container form input[type=radio]{bottom:0}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form [type=submit]{border-color:transparent}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form input:focus{box-shadow:none}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-form-fields>*{align-items:center;display:flex;justify-content:space-between}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-form-fields>p{margin:0}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__agree-terms-group{justify-content:flex-start}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__agree-terms-group input[type=checkbox]{height:16px;margin:0 5px 0 0;width:16px}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__email-group{display:flex;flex:1}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__email-group label{white-space:nowrap}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button{align-items:center;display:inline-flex}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button .kubio-newsletter__submit-text{order:2}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .kubio-newsletter__submit-group button svg{height:100%;width:100%}
+html.pathway-theme .wp-block-kubio-subscribe-form__container form .mc4wp-alert p{margin-bottom:0}
+html.pathway-theme .wp-block-kubio-subscribe-form__container.submit_icon_position-after .kubio-newsletter__submit-group button[type=submit]{align-items:center;display:flex;flex-direction:row}
+html.pathway-theme .wp-block-kubio-subscribe-form .kubio-newsletter__agree-terms-group p{color:inherit!important;font-family:inherit!important;font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;letter-spacing:inherit!important;line-height:inherit!important;text-decoration:inherit!important;text-transform:inherit!important}
 html.pathway-theme #end-resizable-kubio-section{display:none}@media screen and (max-width:600px){
 html.pathway-theme #wpadminbar{position:fixed}}
 html.pathway-theme .pathway-front-header__k__9IGHpldIpw-container{align-items:center}
