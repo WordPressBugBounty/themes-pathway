@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! 
  Theme Name:   Pathway
- Version:      1.0.34
+ Version:      1.0.37
  Description:  Pathway is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Pathway is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
  Author:       Extend Themes
  Author URI:   https://kubiobuilder.com
@@ -10,7 +10,7 @@
  Tags:         entertainment, food-and-drink, portfolio, one-column, two-columns, grid-layout, custom-header, custom-menu, custom-logo, full-width-template, theme-options, translation-ready, featured-images, threaded-comments
  Text Domain:  pathway
 
- Tested up to: 6.8
+ Tested up to: 6.9
  Requires PHP: 7.1
  Requires at least: 5.8.3
 
@@ -1112,6 +1112,7 @@ html.pathway-theme .h-ignore-global-body-typography.wp-block[data-kubio],
 html.pathway-theme .h-ignore-global-body-typography.wp-block[data-kubio] [data-kubio]{color:initial;font-size:medium;font-style:normal;letter-spacing:normal;line-height:normal}
 html.pathway-theme .page-template-kubio-full-width :where(.wp-site-blocks)>*{margin-top:0!important}
 html.pathway-theme [data-kubio] .wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}
+html.pathway-theme .wp-block-image .hide:not(#extra-1){display:block!important;visibility:hidden}
 html.pathway-theme .h-svg-icon{fill:currentColor;box-sizing:content-box;display:inline-block;height:16px;line-height:0!important;vertical-align:middle;width:16px}
 html.pathway-theme .background-wrapper{border-radius:inherit;pointer-events:none;z-index:0}
 html.pathway-theme .background-layer,
@@ -1172,6 +1173,12 @@ html.pathway-theme .h-hide-sm-force,
 html.pathway-theme .kubio-hide-on-mobile{display:none!important}}@media (min-width:768px) and (max-width:1023px){
 html.pathway-theme .kubio-hide-on-tablet{display:none!important}}@media (min-width:1024px){
 html.pathway-theme .kubio-hide-on-desktop{display:none!important}}
+html.pathway-theme [data-kubio] .wp-block-accordion{text-align:left}
+html.pathway-theme [data-kubio] .wp-block-accordion .wp-block-accordion-heading,
+html.pathway-theme [data-kubio] .wp-block-accordion .wp-block-accordion-panel{width:100%}
+html.pathway-theme [data-kubio] .wp-block-post-comments-form .wp-block-button__link{height:auto}
+html.pathway-theme .has-fit-text.wp-block-heading,
+html.pathway-theme p.has-fit-text{max-width:100%;overflow:hidden;transition:none!important}
 .kubio-enable-gap-fallback .kubio-has-gap-fallback{--kubio-gap-fallback-half:calc(var(--kubio-gap-fallback)*0.5);gap:0!important;margin:calc(var(--kubio-gap-fallback-half)*-1)!important}
 .kubio-enable-gap-fallback .kubio-has-gap-fallback>*{margin:var(--kubio-gap-fallback-half)!important}
 .kubio-attachment-fixed-support-fallback [data-kubio],
@@ -1190,6 +1197,15 @@ html.pathway-theme #kubio-language-selector .kubio-language-selector .wpml-ls .w
 html.pathway-theme #kubio-language-selector .kubio-language-selector .wpml-ls .wpml-ls-item a{line-height:0}
 html.pathway-theme #kubio-language-selector .kubio-language-selector .wpml-ls .wpml-ls-item a span{display:none}
 html.pathway-theme #kubio-language-selector .kubio-language-selector .wpml-ls:hover .wpml-ls-item{display:inline-block}
+html.pathway-theme .single-kubio_recommend_page #wpadminbar{display:none}
+html:has(.single-kubio_recommend_page){margin-top:0!important}
+html.pathway-theme .kubio-recommendation-page-iframe__wrapper{bottom:0;height:100%;left:0;margin:0!important;max-width:100%!important;opacity:0;pointer-events:none;position:fixed;right:0;top:0;transition:opacity .3s ease-in-out;width:100%;z-index:99999999}
+html.pathway-theme .kubio-recommendation-page-iframe__wrapper iframe{border:none;height:100%;width:100%}
+html.pathway-theme .kubio-recommendation-page-iframe__wrapper--is-visible{opacity:1;pointer-events:auto;visibility:visible}
+html.pathway-theme .kubio-recommendation-page-iframe__close{--size:30px;--transition:0.3s ease-in-out;align-items:center;background-color:#1e1e1e;border-radius:100%;color:#fff;cursor:pointer;display:flex;font-size:var(--size);font-weight:500;height:var(--size);justify-content:center;line-height:1;position:absolute;right:40px;top:40px;transition:var(--transition);transition-property:background-color;width:var(--size);z-index:9999999}
+html.pathway-theme .kubio-recommendation-page-iframe__close svg{fill:currentColor;display:block;height:calc(var(--size)*.6);transition:var(--transition);transition-property:color;width:calc(var(--size)*.6)}@media (max-width:768px){
+html.pathway-theme .kubio-recommendation-page-iframe__close{right:10px;top:10px}}
+html.pathway-theme .kubio-recommendation-page-iframe__close:hover{background-color:#fff;color:#333}
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title{cursor:pointer;text-align:left;text-decoration:none}
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title .wp-block-kubio-accordionitem__titleText{flex:1;order:2;word-break:break-word}
 html.pathway-theme .wp-block-kubio-accordion .wp-block-kubio-accordionitem__title .h-accordion-item-title-icon{display:inline-flex;height:16px;text-align:center;width:16px}
@@ -1209,6 +1225,10 @@ html.pathway-theme .wp-block-kubio-button__link svg{transform:translateY(1px)}
 html.pathway-theme .wp-block-kubio-button__inner{cursor:pointer;text-decoration:none}
 html.pathway-theme .wp-block-kubio-button__icon{flex-shrink:0}
 html.pathway-theme .wp-block-kubio-button__text:empty{display:none}
+html.pathway-theme .wp-block-kubio-button__inline-fancybox:empty{display:none;visibility:hidden}
+html.pathway-theme .kubio-recommendation-lightbox__inner-content .wpcf7 input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit]),
+html.pathway-theme .kubio-recommendation-lightbox__inner-content .wpcf7 select,
+html.pathway-theme .kubio-recommendation-lightbox__inner-content .wpcf7 textarea{display:block;width:100%}
 html.pathway-theme .wp-block-kubio-column{max-width:100%;min-width:0}
 html.pathway-theme .wp-block-kubio-column.masonry-item{transition-duration:0s}
 html.pathway-theme .wp-block-kubio-column__content .h-heading h1:last-child,
@@ -1248,6 +1268,7 @@ html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .wpcf7-submit{margin-bottom:16px}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .wpcf7-response-output{margin:15px 0 0;padding:.2em 1em;text-align:left}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .screen-reader-response{clip:rect(1px,1px,1px,1px);border:0;height:1px;margin:0;overflow:hidden;padding:0;position:absolute;width:1px}
+html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 fieldset.hidden-fields-container{border:none!important;padding:0!important}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .ajax-loader{display:none}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .wpcf7-select{-webkit-appearance:listbox}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpcf7 .wpcf7-checkbox .wpcf7-list-item,
@@ -1299,6 +1320,7 @@ html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style .wpfor
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-use-style [type=submit]{cursor:pointer;display:block;margin-left:0;margin-right:auto;text-align:left}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-no-style{text-align:left}
 html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-no-style form.forminator-ui{display:block!important}
+html.pathway-theme .wp-block-kubio-contact__formContainer.kubio-no-style .wpcf7 input{max-width:100%}
 html.pathway-theme .wp-block-kubio-contact__formContainer .wp-block form p{color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit;text-transform:inherit}
 html.pathway-theme .wp-block-kubio-copyright p{margin:0}
 html.pathway-theme .wp-block-kubio-divider{font-size:0!important;line-height:0!important}
@@ -3295,28 +3317,28 @@ html.pathway-theme [data-kubio] input[type=url]:focus,
 html.pathway-theme [data-kubio] input[type=week]:focus,
 html.pathway-theme [data-kubio] select:focus,
 html.pathway-theme [data-kubio] textarea:focus{border-color:rgba(var(--kubio-color-1),1);color:rgba(var(--kubio-color-6),1)}
-html.pathway-theme [data-kubio] button,
-html.pathway-theme [data-kubio] input[type=button]{background-color:rgba(var(--kubio-color-1),1);border:2px solid rgba(var(--kubio-color-1),1);border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;color:rgba(var(--kubio-color-5),1);padding:8px 24px 8px 25px}
-html.pathway-theme [data-kubio] button:hover,
-html.pathway-theme [data-kubio] input[type=button]:hover{background-color:rgba(var(--kubio-color-1-variant-4),1);border-color:rgba(var(--kubio-color-1-variant-4),1)}
-html.pathway-theme [data-kubio] button:disabled,
-html.pathway-theme [data-kubio] button[disabled],
-html.pathway-theme [data-kubio] input[type=button]:disabled,
-html.pathway-theme [data-kubio] input[type=button][disabled]{background-color:rgba(var(--kubio-color-5-variant-2),1);border-color:rgba(var(--kubio-color-5-variant-2),1);color:rgba(var(--kubio-color-5-variant-3),1)}
-html.pathway-theme [data-kubio] button[type=submit],
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle)),
+html.pathway-theme [data-kubio] input[type=button]:where(:not(figure input[type=button])){background-color:rgba(var(--kubio-color-1),1);border:2px solid rgba(var(--kubio-color-1),1);border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;color:rgba(var(--kubio-color-5),1);padding:8px 24px 8px 25px}
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle)):hover,
+html.pathway-theme [data-kubio] input[type=button]:where(:not(figure input[type=button])):hover{background-color:rgba(var(--kubio-color-1-variant-4),1);border-color:rgba(var(--kubio-color-1-variant-4),1)}
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle)):disabled,
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[disabled],
+html.pathway-theme [data-kubio] input[type=button]:where(:not(figure input[type=button])):disabled,
+html.pathway-theme [data-kubio] input[type=button]:where(:not(figure input[type=button]))[disabled]{background-color:rgba(var(--kubio-color-5-variant-2),1);border-color:rgba(var(--kubio-color-5-variant-2),1);color:rgba(var(--kubio-color-5-variant-3),1)}
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=submit],
 html.pathway-theme [data-kubio] input[type=submit]{background-color:rgba(var(--kubio-color-1),1);border:2px solid rgba(var(--kubio-color-1),1);border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;color:rgba(var(--kubio-color-5),1);padding:8px 24px 8px 25px}
-html.pathway-theme [data-kubio] button[type=submit]:hover,
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=submit]:hover,
 html.pathway-theme [data-kubio] input[type=submit]:hover{background-color:rgba(var(--kubio-color-1-variant-4),1);border-color:rgba(var(--kubio-color-1-variant-4),1)}
-html.pathway-theme [data-kubio] button[type=submit]:disabled,
-html.pathway-theme [data-kubio] button[type=submit][disabled],
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=submit]:disabled,
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=submit][disabled],
 html.pathway-theme [data-kubio] input[type=submit]:disabled,
 html.pathway-theme [data-kubio] input[type=submit][disabled]{background-color:rgba(var(--kubio-color-5-variant-2),1);border-color:rgba(var(--kubio-color-5-variant-2),1);color:rgba(var(--kubio-color-5-variant-3),1)}
-html.pathway-theme [data-kubio] button[type=reset],
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=reset],
 html.pathway-theme [data-kubio] input[type=reset]{background-color:rgba(var(--kubio-color-1-variant-1),1);border:2px solid rgba(var(--kubio-color-1-variant-1),1);border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;color:rgba(var(--kubio-color-6-variant-2),1);padding:8px 24px 8px 25px}
-html.pathway-theme [data-kubio] button[type=reset]:hover,
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=reset]:hover,
 html.pathway-theme [data-kubio] input[type=reset]:hover{background-color:rgba(var(--kubio-color-1-variant-2),1);border-color:rgba(var(--kubio-color-1-variant-2),1)}
-html.pathway-theme [data-kubio] button[type=reset]:disabled,
-html.pathway-theme [data-kubio] button[type=reset][disabled],
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=reset]:disabled,
+html.pathway-theme [data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))[type=reset][disabled],
 html.pathway-theme [data-kubio] input[type=reset]:disabled,
 html.pathway-theme [data-kubio] input[type=reset][disabled]{background-color:rgba(var(--kubio-color-5-variant-2),1);border-color:rgba(var(--kubio-color-5-variant-2),1);color:rgba(var(--kubio-color-5-variant-3),1)}
 html.pathway-theme .woocommerce #respond input#submit,
