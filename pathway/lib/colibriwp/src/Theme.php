@@ -245,7 +245,7 @@ class Theme {
 			wp_enqueue_script( 'wp-util' );
 
 			?>
-			<div class="notice notice-success is-dismissible colibri-admin-big-notice notice-large">
+			<div class="kubio-notice notice notice-success is-dismissible colibri-admin-big-notice notice-large">
 				<?php View::make( 'admin/admin-notice' ); ?>
 			</div>
 			<?php

@@ -557,7 +557,7 @@ domready(function () {
 domready__WEBPACK_IMPORTED_MODULE_1___default()(function () {
   if (window !== top) {
     setTimeout(function () {
-      document.querySelector("body").style.transform = "translateZ(0)";
+      // document.querySelector("body").style.transform = "translateZ(0)";
       window.scrollTo(0, 0);
     }, 100);
   }

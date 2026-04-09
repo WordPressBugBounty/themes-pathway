@@ -5,7 +5,7 @@ namespace ColibriWP\Theme\Core;
 use ColibriWP\Theme\PluginsManager;
 use ColibriWP\Theme\Theme;
 use TGM_Plugin_Activation;
-
+use PathwayTheme\SiteLeadsThemeKit\SiteLeads;
 const PRO = '-pro';
 
 class EnableKubioInCustomizerPanel extends \WP_Customize_Panel {
@@ -135,20 +135,18 @@ class EnableKubioInCustomizerPanel extends \WP_Customize_Panel {
 
 	protected function render() {
 
-		$message = __( 'The Kubio plugin takes Pathway to a whole new level by adding new and powerful editing and styling options. Wanna have full control over your design with Pathway?', 'kubio' );
-
 		?>
 		<li class="accordion-section kubio-customizer-panel">
 		<?php if ( $this->getPluginState( $this->plugin_slug ) !== PluginsManager::ACTIVE_PLUGIN ) : ?>
 			<div class="accordion-section-title">
-				<p><?php echo esc_html( $message ); ?></p>
-			<?php if ( $this->getPluginState( $this->plugin_slug ) === PluginsManager::NOT_INSTALLED_PLUGIN ) : ?>
+                <?php echo SiteLeads::getInstallCompanioNoticeDescriptionSectionListInCustomizerWithSiteLeadsCheck(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php if ( $this->getPluginState( $this->plugin_slug ) === PluginsManager::NOT_INSTALLED_PLUGIN ) : ?>
 				<button data-colibri-plugin-action="install" data-source="customizer-sidebar" class="button button-primary kubio-open-editor-panel-button ">
-					<span data-action="install"><?php esc_html_e( 'Install Kubio', 'kubio' ); ?></span>
+					<span data-action="install"><?php echo esc_html(SiteLeads::getInstallCompanionButtonLabelWithSiteLeadsCheck()); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 				</button>
 			<?php elseif ( $this->getPluginState( $this->plugin_slug ) === PluginsManager::INSTALLED_PLUGIN ) : ?>
 				<button data-colibri-plugin-action="activate" data-source="customizer-sidebar" class="button button-primary kubio-open-editor-panel-button">
-					<span data-action="activate"><?php esc_html_e( 'Activate Kubio', 'kubio' ); ?></span>
+					<span data-action="activate"><?php echo esc_html(SiteLeads::getActivateCompanionButtonLabelWithSiteLeadsCheck());// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 				</button>
 			<?php endif; ?>
 			</div>
