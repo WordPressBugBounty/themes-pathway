@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! 
  Theme Name:   Pathway
- Version:      1.0.45
+ Version:      1.0.46
  Description:  Pathway is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Pathway is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
  Author:       Extend Themes
  Author URI:   https://kubiobuilder.com
@@ -214,6 +214,8 @@ html.pathway-theme [data-kubio] .quicktags-toolbar .ed_button{background:#f6f7f7
 html.pathway-theme [data-kubio] .quicktags-toolbar .ed_button:focus,
 html.pathway-theme [data-kubio] .quicktags-toolbar .ed_button:hover{background:#f0f0f1!important;border-color:#0a4b78!important;color:#0a4b78!important}
 html.pathway-theme [data-kubio] img.emoji{height:1em}
+html.pathway-theme [data-kubio] summary{display:list-item;list-style:disclosure-closed}
+html.pathway-theme [data-kubio] details[open] summary{list-style:disclosure-open}
 html.pathway-theme .h-container{margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px;width:100%}@media (min-width:576px){
 html.pathway-theme .h-container{max-width:540px}}@media (min-width:768px){
 html.pathway-theme .h-container{max-width:720px}}@media (min-width:1024px){
@@ -1179,6 +1181,7 @@ html.pathway-theme [data-kubio] .wp-block-accordion .wp-block-accordion-panel{wi
 html.pathway-theme [data-kubio] .wp-block-post-comments-form .wp-block-button__link{height:auto}
 html.pathway-theme .has-fit-text.wp-block-heading,
 html.pathway-theme p.has-fit-text{max-width:100%;overflow:hidden;transition:none!important}
+html.pathway-theme [data-kubio] .wp-block-icon svg{height:auto}
 .kubio-enable-gap-fallback .kubio-has-gap-fallback{--kubio-gap-fallback-half:calc(var(--kubio-gap-fallback)*0.5);gap:0!important;margin:calc(var(--kubio-gap-fallback-half)*-1)!important}
 .kubio-enable-gap-fallback .kubio-has-gap-fallback>*{margin:var(--kubio-gap-fallback-half)!important}
 .kubio-attachment-fixed-support-fallback [data-kubio],
@@ -1889,18 +1892,23 @@ html.pathway-theme .wp-block-kubio-post-comments.kubio-migration--1 .comment-res
 html.pathway-theme .wp-block-kubio-post-comments.kubio-migration--1 .comment-respond p.comment-notes{font-size:80%}
 html.pathway-theme .wp-block-kubio-post-comments.kubio-migration--1 .blog-post-comments-not-allow{background-color:rgba(3,169,244,.05);border:1px solid rgba(3,169,244,.1);border-radius:3px;padding-bottom:20px;padding-top:20px;text-align:center}
 html.pathway-theme .wp-block-kubio-post-comments.kubio-migration--1 .blog-post-comments-not-allow .blog-comments-not-allow-message{font-size:16px;font-weight:800}
-html.pathway-theme .entry-content>*{margin:clamp(1rem,.5em,2.5rem) auto clamp(1rem,.25em,2rem)}
-html.pathway-theme .entry-content>:first-child{margin-top:0}
-html.pathway-theme .entry-content>:last-child{margin-bottom:0}
-html.pathway-theme .entry-content>.wp-block-kubio-section{margin:0;max-width:unset}
-html.pathway-theme .entry-content>*{max-width:840px}
-html.pathway-theme .entry-content .alignwide{margin-left:auto;margin-right:auto;max-width:1200px;width:100%}@media (max-width:767px){
-html.pathway-theme .entry-content .alignwide{max-width:100%;width:100%}}@media (min-width:768px) and (max-width:1023px){
-html.pathway-theme .entry-content .alignwide{max-width:100%;width:100%}}
-html.pathway-theme .wp-block-kubio-section .entry-content>*{margin:clamp(1rem,.5em,2.5rem) auto clamp(1rem,.25em,2rem)}
-html.pathway-theme .wp-block-kubio-section .entry-content>:first-child{margin-top:0}
-html.pathway-theme .wp-block-kubio-section .entry-content>:last-child{margin-bottom:0}
-html.pathway-theme .wp-block-kubio-section .entry-content>.wp-block-kubio-section{margin:0;max-width:unset}
+html.pathway-theme .entry-content:not(.wc-tab)>*{margin:clamp(1rem,.5em,2.5rem) auto clamp(1rem,.25em,2rem)}
+html.pathway-theme .entry-content:not(.wc-tab)>:first-child{margin-top:0}
+html.pathway-theme .entry-content:not(.wc-tab)>:last-child{margin-bottom:0}
+html.pathway-theme .entry-content:not(.wc-tab)>.wp-block-kubio-section{margin:0;max-width:unset}
+html.pathway-theme .entry-content:not(.wc-tab)>*{max-width:840px}
+html.pathway-theme .entry-content:not(.wc-tab) .alignwide{margin-left:auto;margin-right:auto;max-width:1200px;width:100%}@media (max-width:767px){
+html.pathway-theme .entry-content:not(.wc-tab) .alignwide{max-width:100%;width:100%}}@media (min-width:768px) and (max-width:1023px){
+html.pathway-theme .entry-content:not(.wc-tab) .alignwide{max-width:100%;width:100%}}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab)>*{margin:clamp(1rem,.5em,2.5rem) auto clamp(1rem,.25em,2rem)}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab)>:first-child{margin-top:0}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab)>:last-child{margin-bottom:0}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab)>.wp-block-kubio-section{margin:0;max-width:unset}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab)>*{max-width:840px}
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab) .alignwide{margin-left:auto;margin-right:auto;max-width:1200px;width:100%}@media (max-width:767px){
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab) .alignwide{max-width:100%;width:100%}}@media (min-width:768px) and (max-width:1023px){
+html.pathway-theme .wp-block-kubio-section .entry-content:not(.wc-tab) .alignwide{max-width:100%;width:100%}}
+html.pathway-theme .wp-site-blocks:has(.wp-block-kubio-header) .wp-block-post-content{-webkit-margin-before:0;-webkit-margin-after:0;margin-block-end:0;margin-block-start:0}
 html.pathway-theme .wp-block-kubio-post-featured-image{margin:0}
 html.pathway-theme .wp-block-kubio-post-featured-image>img{border-radius:inherit;display:block;height:100%;width:100%}
 html.pathway-theme .wp-block-kubio-post-featured-image .block-list-appender{width:100%}
