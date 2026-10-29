@@ -66,7 +66,12 @@ class PluginsManager {
 			'activate_plugin',
 			function () {
                 check_ajax_referer( 'plugin_activate_nonce');
-				$slug = isset( $_REQUEST['slug'] ) ? $_REQUEST['slug'] : false;
+				$slug = isset( $_REQUEST['slug'] ) ? wp_unslash( $_REQUEST['slug'] ) : false;
+
+				if ( ! current_user_can( 'activate_plugin', $slug ) ) {
+					wp_send_json_error( array( 'error' => 'activate_plugin_capability_missing' ) );
+				}
+
                 $source = sanitize_text_field(Utils::pathGet($_REQUEST, 'source', ""));
 				
                 if ($source) {
